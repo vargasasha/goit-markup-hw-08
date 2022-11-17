@@ -1,0 +1,41 @@
+.duty-reset {
+  padding-top: 0px;
+}
+
+.duty-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+  margin-bottom: 50px;
+}
+
+.duty-list {
+  display: flex;
+  gap: 30px;
+}
+
+.thumb {
+  position: relative;
+  display: flex;
+  & > .label {
+  position: absolute;
+  overflow: hidden;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  min-width: 100%;
+  bottom: 0;
+}
+}
+

@@ -1,0 +1,61 @@
+.card-list {
+  display: flex;
+  gap: 30px;
+}
+
+.card-list__item {
+  flex-basis: calc((100% - 90px) / 4);
+  &::before {
+    content: "";
+    width: 270px;
+    height: 120px;
+    display: block;
+    background-color: var(--light-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &:nth-child(1)::before {
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+
+  &:nth-child(2)::before {
+    background-image: url(../images/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+
+  &:nth-child(3)::before {
+    background-image: url(../images/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+
+  &:nth-child(4)::before {
+    background-image: url(../images/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px 70px;
+  }
+}
+
+.card-list__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  margin-bottom: 10px;
+}
+.card-list__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
