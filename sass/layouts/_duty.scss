@@ -1,5 +1,8 @@
 .duty-reset {
   padding-top: 0px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .duty-title {

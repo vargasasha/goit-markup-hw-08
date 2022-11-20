@@ -1,13 +1,19 @@
 .card-list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card-list__item {
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+   @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
   &::before {
     content: "";
-    width: 270px;
     height: 120px;
     display: block;
     background-color: var(--light-background-color);
@@ -51,7 +57,12 @@
   text-transform: uppercase;
   color: var(--main-title-color);
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
+
 .card-list__text {
   font-weight: 400;
   font-size: 14px;
