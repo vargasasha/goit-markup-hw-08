@@ -19,3 +19,9 @@ body {
     padding-bottom: 94px;
   }
 }
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }

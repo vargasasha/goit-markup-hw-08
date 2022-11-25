@@ -5,11 +5,7 @@
   position: fixed;
   top: 0;
   transition: opacity 300ms linear, visibility 300ms linear;
-  &.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
+  
 }
 
 .modal {

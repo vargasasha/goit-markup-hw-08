@@ -18,11 +18,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="link navigation__logo" href="index.html" lang="en"
@@ -58,8 +57,100 @@
             >
           </li>
         </ul>
+        <button type="button" class="open-menu-btn" data-menu-open>
+          <svg class="open-menu-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <div class="mobile-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <div class="mobile-menu-top">
+            <button type="button" class="close-menu-btn" data-menu-close>
+              <svg class="close-menu-icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-mobile-close"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link current" href="./index.html"
+                  >Студія</a
+                >
+              </li>
+
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link link" href="">Контакти</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mobile-menu-bottom">
+            <ul class="mobile-connect-list list">
+              <li class="mobile-connect-list__item">
+                <a class="mobile-connect-tel__link link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+               <li class="mobile-connect-list__item">
+                <a
+                  class="mobile-connect-mail__link link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+  
+              <ul class="mobile-soc-list list">
+                <li class="mobile-soc-item">
+                  <a
+                    class="mobile-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="mobile-soc-item">
+                  <a
+                    class="mobile-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Twitter</a
+                  >
+                </li>
+                <li class="mobile-soc-item">
+                  <a
+                    class="mobile-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >Facebook</a
+                  >
+                </li>
+                <li class="mobile-soc-item">
+                  <a
+                    class="mobile-soc-link link"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+    </header>
     <main>
       <section class="hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
@@ -371,7 +462,7 @@
               </div>
             </li>
             <li class="team-item">
-             <picture>
+              <picture>
                 <source
                   srcset="./images/member4.jpg 1x, ./images/member4-2x.jpg 2x"
                   media="(min-width): 1200px"
@@ -686,5 +777,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

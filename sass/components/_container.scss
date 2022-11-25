@@ -13,3 +13,17 @@
     max-width: 1200px;
   }
 }
+
+.mob-container {
+  width: 100%;
+  height: 100%;
+  padding-left: 40px;
+  padding-right: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and(min-width: 480px) {
+    max-width: 480px;
+  }
+}
