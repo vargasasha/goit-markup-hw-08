@@ -509,6 +509,12 @@ body {
     gap: 8px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .connect-list__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 
 .connect-list__icon {
   fill: currentColor;
@@ -1279,14 +1285,13 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
-    width: calc((100% - 94px) / 2);
+    width: calc((100% - 93px) / 2);
     text-align: start;
   }
 }
 
 @media screen and (min-width: 768px) {
   .footer-social > .footer-title {
-    width: calc((100% - 30px) / 2);
     margin: 0 auto;
     margin-bottom: 20px;
   }

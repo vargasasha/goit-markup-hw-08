@@ -152,6 +152,10 @@
     padding-bottom: 0px;
     gap: 8px;
   }
+   @media screen and(min-width: 1200px) {
+     padding-top: 32px;
+  padding-bottom: 32px;
+  }
 }
 
 .connect-list__icon {
