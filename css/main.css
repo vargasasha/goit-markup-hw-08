@@ -135,7 +135,7 @@ body {
 }
 
 .modal {
-  width: 450px;
+  width: 100%;
   min-height: 609px;
   background-color: var(--main-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -149,6 +149,16 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1268,7 +1278,6 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: var(--main-background-color);
-  margin-top: 60px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
@@ -1278,15 +1287,20 @@ body {
   }
 }
 
+.footer-social {
+  margin-top: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer-social {
     width: calc((100% - 30px) / 2);
+    margin-top: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-social {
     width: calc((100% - 93px) / 2);
     text-align: start;
+    margin-top: 0px;
   }
 }
 
@@ -1339,6 +1353,9 @@ body {
   fill: currentColor;
 }
 
+.footer-subscibe {
+  margin-top: 60px;
+}
 @media screen and (min-width: 768px) {
   .footer-subscibe {
     display: flex;
@@ -1350,6 +1367,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-subscibe {
     align-items: flex-start;
+    margin-top: 0px;
   }
 }
 
