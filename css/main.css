@@ -526,8 +526,23 @@ body {
   }
 }
 
-.connect-list__icon {
+.connect-list__icon1,
+.connect-list__icon2 {
   fill: currentColor;
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-list__icon1 {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-list__icon2 {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .open-menu-btn {
@@ -1192,14 +1207,14 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     text-align: start;
-    width: calc((100% - 94px) / 2);
+    width: calc((100% - 93px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: flex;
-    gap: 94px;
+    gap: 93px;
     align-items: baseline;
     justify-content: flex-start;
     text-align: start;
